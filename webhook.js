@@ -10,4 +10,8 @@ app.intent('actions.intent.MAIN', (conv) => {
 
 router.post('/',app)
 
+router.get('/',(req,res)=>{
+    res.send('webhook');
+})
+
 module.exports = router;

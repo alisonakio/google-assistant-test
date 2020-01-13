@@ -25,7 +25,7 @@
         "name": "com.itau.SIGNIN",
         "trigger": {
           "queryPatterns": [
-            "Testar Sign In"
+            "Alison"
           ]
         }
       }

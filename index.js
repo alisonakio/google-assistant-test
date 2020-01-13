@@ -1,7 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const { promisify } = require('util')
-const webhook = require('webhook');
+const webhook = require('./webhook');
 
 const app = express()
 app.use(bodyParser.json())

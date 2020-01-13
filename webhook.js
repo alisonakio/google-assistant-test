@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-const {actionssdk} = require('actions-on-google');
-const app = actionssdk({debug: true});
+const {dialogflow} = require('actions-on-google');
+const app = dialogflow();
 
 app.intent('actions.intent.MAIN', (conv) => {
   conv.ask('Hi!');

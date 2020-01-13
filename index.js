@@ -11,6 +11,8 @@ app.get('/', (req,res)=>{
     res.send('Google Assistant Test');
 })
 
+app.use('/webhook', webhook)
+
 const startServer = async () => {
   const port = process.env.PORT || 8080
   await promisify(app.listen).bind(app)(port)

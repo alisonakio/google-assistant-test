@@ -1,0 +1,26 @@
+{
+  "actions": [
+    {
+      "description": "Default Welcome Intent",
+      "name": "MAIN",
+      "fulfillment": {
+        "conversationName": "Itaú Teste"
+      },
+      "intent": {
+        "name": "actions.intent.MAIN",
+        "trigger": {
+          "queryPatterns": [
+            "Falar com Itaú teste"
+          ]
+        }
+      }
+    }
+  ],
+  "conversations": {
+    "Itaú Teste": {
+      "name": "Itaú Teste",
+      "url": "http://alison-google-assistant-test.herokuapp.com/webhook"
+    }
+  },
+  "locale": "pt-BR"
+}

@@ -12,7 +12,7 @@ app.get('/', (req,res)=>{
 })
 
 const startServer = async () => {
-  const port = process.env.PORT || 8080
+  const port = 443//process.env.PORT || 8080
   await promisify(app.listen).bind(app)(port)
   console.log(`Listening on port ${port}`)
 }

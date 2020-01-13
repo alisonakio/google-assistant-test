@@ -6,7 +6,7 @@ const webhook = require('webhook');
 const app = express()
 app.use(bodyParser.json())
 
-app.post('/', (req,res)=>{
+app.get('/', (req,res)=>{
     console.log('Default route');
     res.send('Google Assistant Test');
 })

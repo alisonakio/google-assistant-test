@@ -4,7 +4,8 @@
   "description": "Google Assistant test",
   "main": "index.js",
   "scripts": {
-    "test": "standard"
+    "test": "standard",
+    "start": "node index.js"
   },
   "dependencies": {
     "express": "4.16.3",

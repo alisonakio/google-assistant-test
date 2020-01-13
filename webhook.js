@@ -8,7 +8,7 @@ app.intent('actions.intent.MAIN', (conv) => {
   conv.ask('Hi!');
 });
 
-app.intent('com.itau.SIGNIN', (conv) => {
+app.intent('actions.intent.TEXT', (conv) => {
     conv.ask('Hi!');
 });
 

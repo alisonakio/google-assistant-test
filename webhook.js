@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const {actionssdk} = require('actions-on-google');
+const {actionssdk, SignIn} = require('actions-on-google');
 const app = actionssdk({debug: true});
 
 app.intent('actions.intent.MAIN', (conv) => {
@@ -9,7 +9,7 @@ app.intent('actions.intent.MAIN', (conv) => {
 });
 
 app.intent('actions.intent.TEXT', (conv) => {
-    conv.ask('Hi!');
+    conv.ask(new SignIn());
 });
 
 router.post('/',app)

@@ -14,6 +14,21 @@
           ]
         }
       }
+    },
+    {
+      "description": "Sign In test",
+      "name": "SIGNIN",
+      "fulfillment": {
+        "conversationName": "Itaú Teste"
+      },
+      "intent": {
+        "name": "com.itau.SIGNIN",
+        "trigger": {
+          "queryPatterns": [
+            "Testar Sign In"
+          ]
+        }
+      }
     }
   ],
   "conversations": {

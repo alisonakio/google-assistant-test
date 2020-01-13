@@ -8,6 +8,10 @@ app.intent('actions.intent.MAIN', (conv) => {
   conv.ask('Hi!');
 });
 
+app.intent('com.itau.SIGNIN', (conv) => {
+    conv.ask('Hi!');
+});
+
 router.post('/',app)
 
 router.get('/',(req,res)=>{

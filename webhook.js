@@ -1,14 +1,14 @@
 const express = require('express')
 const router = express.Router()
 
-const {dialogflow, SignIn} = require('actions-on-google')
-const app = dialogflow({debug: true})
+const {actionssdk, SignIn} = require('actions-on-google')
+const app = actionssdk({debug: true})
 
-app.intent('Default Welcome Intent', (conv) => {
+app.intent('actions.intent.MAIN', (conv) => {
   conv.ask('Hi!');
 })
 
-app.intent('Default Fallback Intent', (conv) => {
+app.intent('actions.intent.TEXT', (conv) => {
     conv.ask(new SignIn());
 })
 

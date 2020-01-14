@@ -9,7 +9,7 @@ app.intent('actions.intent.MAIN', (conv) => {
 })
 
 app.intent('actions.intent.TEXT', (conv) => {
-    conv.ask(new SignIn('Vamos pegar seus dados'));
+    conv.ask(new SignIn());
 })
 
 app.intent('actions.intent.SIGN_IN', (conv, params, signin) => {

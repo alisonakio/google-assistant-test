@@ -9,8 +9,17 @@ app.intent('actions.intent.MAIN', (conv) => {
 });
 
 app.intent('actions.intent.TEXT', (conv) => {
-    conv.ask(new SignIn());
+    conv.ask(new SignIn('Vamos pegar seus dados'));
 });
+
+app.intent('actions.intent.SIGN_IN', (conv, params, signin) => {
+    if (signin.status === 'OK') {
+      const payload = JSON.stringify(conv.user.profile.payload);
+      conv.ask(`I got your account details, ${payload}. What do you want to do next?`);
+    } else {
+      conv.ask(`I won't be able to save your data, but what do you want to do next?`);
+    }
+  })
 
 router.post('/',app)
 

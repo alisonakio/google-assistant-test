@@ -4,36 +4,19 @@
       "description": "Default Welcome Intent",
       "name": "MAIN",
       "fulfillment": {
-        "conversationName": "Itaú Teste Sign In"
+        "conversationName": "Itaú Teste"
       },
       "intent": {
         "name": "actions.intent.MAIN",
         "trigger": {
-          "queryPatterns": [
-            "Falar com Itaú teste"
-          ]
-        }
-      }
-    },
-    {
-      "description": "Sign In test",
-      "name": "SIGNIN",
-      "fulfillment": {
-        "conversationName": "Itaú Teste Sign In"
-      },
-      "intent": {
-        "name": "com.itau.SIGNIN",
-        "trigger": {
-          "queryPatterns": [
-            "Alison"
-          ]
+          "queryPatterns": ["Falar com Itaú teste"]
         }
       }
     }
   ],
   "conversations": {
     "Itaú Teste": {
-      "name": "Itaú Teste Sign In",
+      "name": "Itaú Teste",
       "url": "https://alison-google-assistant-test.herokuapp.com/webhook"
     }
   },

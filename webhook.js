@@ -9,7 +9,7 @@ const app = actionssdk({
 });
 
 app.intent("actions.intent.MAIN", conv => {
-  conv.ask("Hi!");
+  conv.ask("HAHAHAHAAHAH");
 });
 
 app.intent("actions.intent.TEXT", conv => {

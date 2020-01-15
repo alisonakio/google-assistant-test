@@ -19,7 +19,7 @@ app.intent("actions.intent.TEXT", conv => {
 app.intent("actions.intent.SIGN_IN", (conv, params, signin) => {
   if (signin.status === "OK") {
     conv.ask("HAHAHAHAHAHA!");
-    let email = conv.user;
+    let email = JSON.stringify(conv.user);
     console.log(email);
     conv.ask(`${email}`);
     //   const payload = JSON.stringify(conv.user.profile.payload);

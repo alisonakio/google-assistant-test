@@ -10,6 +10,8 @@ const app = actionssdk({
 
 app.intent("actions.intent.MAIN", conv => {
   conv.ask("HAHAHAHAAHAH");
+  conv.ask(new Suggestions('Suggestion 1'));
+  conv.ask(new Suggestions(['Suggestion 2', 'Suggestion 3']));
 });
 
 app.intent("actions.intent.TEXT", conv => {
